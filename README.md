@@ -1,4 +1,4 @@
-# CS 5004 Object-Oriented Design - Final Project
+# Building Elevator System - Swing Elevator Simulator
 
 The goal of this project is to design and implement a simulation of an elevator system using object-oriented principles. The program models the behavior of multiple elevators within a building, handling requests from users and providing contol options to start, step and stop the building.
 
