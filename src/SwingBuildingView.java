@@ -310,7 +310,7 @@ public class SwingBuildingView extends JFrame implements BuildingViewInterface {
       int capacity = Integer.parseInt(capacityInput.getText());
 
       // Enable reset button only if all inputs are valid
-      resetButton.setEnabled(floors > 0 && elevators > 0 && capacity > 0);
+      resetButton.setEnabled(floors >= 3 && elevators > 0 && capacity > 0);
     } catch (NumberFormatException e) {
       // If any input is not a valid integer, disable the reset button
       resetButton.setEnabled(false);
