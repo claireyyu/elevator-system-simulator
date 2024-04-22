@@ -31,7 +31,7 @@ Initial designs utilized a simpler, less interactive model without a GUI. The ne
 
 ## Assumptions
 
-- The building has a minimum of 1 floor, 1 elevator and 1 user.
+- The building has a minimum of 3 floors, 1 elevator and 1 user.
 - The building's up and down requests must be within the bounds of the building's floors.
 - Reset and addRequest buttons are disabled if the input values are invalid.
 - When the building is stopped or stopping, a warning will show that requests cannot be added.
