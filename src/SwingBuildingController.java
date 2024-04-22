@@ -80,8 +80,14 @@ public class SwingBuildingController implements BuildingControllerInterface, Act
         }
         break;
       case "Stop":
-        model.stopElevatorSystem();
-        view.updatePromptLabel("Stopping");
+        try {
+          model.stopElevatorSystem();
+          view.updatePromptLabel("Stopping");
+        } catch (IllegalStateException ise) {
+          view.updatePromptLabel("Cannot Stop: The Elevator System is "
+              + "already stopped or out of service.");
+          return;
+        }
         break;
       case "Step":
         try {
